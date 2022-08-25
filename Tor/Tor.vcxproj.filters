@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Net Helpers">
+      <UniqueIdentifier>{de1260e8-3e3e-4d79-9aa3-46486eec587b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Net Helpers">
+      <UniqueIdentifier>{f74acc50-f61f-4dbf-8202-61ae2f64d07d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hsvc3">
+      <UniqueIdentifier>{51104a57-2e57-4c20-bfb1-1af83ee8ac5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Hsvc3">
+      <UniqueIdentifier>{20055d18-b4a3-422f-9ce1-90c664a814a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Circuit">
+      <UniqueIdentifier>{fa90875f-e11f-4cc6-abe4-581831466e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Misc">
+      <UniqueIdentifier>{4c8e497b-d5e9-4870-a4bd-871063511c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Circuit">
+      <UniqueIdentifier>{31c54e92-8022-4b5a-ac1d-9a6382634fb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Misc">
+      <UniqueIdentifier>{c6ee4ae1-bd30-476d-bdfc-1b14473e1a49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="uTor_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_relay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_consensus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_module_header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_guard_node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_ntor_handshake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_http.h">
+      <Filter>Header Files\Net Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_cell_io.h">
+      <Filter>Header Files\Net Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_hs3_calc.h">
+      <Filter>Header Files\Hsvc3</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_hs3_descriptor.h">
+      <Filter>Header Files\Hsvc3</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_hs3_dirlist.h">
+      <Filter>Header Files\Hsvc3</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_hs3_ntor_handshake.h">
+      <Filter>Header Files\Hsvc3</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_hs3.h">
+      <Filter>Header Files\Hsvc3</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_circuit.h">
+      <Filter>Header Files\Circuit</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_circuit_extender.h">
+      <Filter>Header Files\Circuit</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_cert.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_linkspec.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="uTor_node_info.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="uTor_stream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_consensus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_guard_node.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_ntor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_relay.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_cell_io.c">
+      <Filter>Source Files\Net Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_http.c">
+      <Filter>Source Files\Net Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_hs3.c">
+      <Filter>Source Files\Hsvc3</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_hs3_calc.c">
+      <Filter>Source Files\Hsvc3</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_hs3_dirlist.c">
+      <Filter>Source Files\Hsvc3</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_hs3_ntor_handshake.c">
+      <Filter>Source Files\Hsvc3</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_circuit_extender.c">
+      <Filter>Source Files\Circuit</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_cert.c">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_node_info.c">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_circuit.c">
+      <Filter>Source Files\Circuit</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_module_header.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uTor_hs3_descriptor.c">
+      <Filter>Source Files\Hsvc3</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
