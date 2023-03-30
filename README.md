@@ -8,7 +8,7 @@ Also, yes the naming conventions are off. This project has gone through some nam
 
 Keep in mind the following:
 
-- This code is not made to be secure or even stable, it is a PoC that needs proof-reading.. that being said i did right tests for it in my CI, and I have used this code extensively in small projects.. that have run for weeks! I even made a Tor wardialer that would scrape various sources for onion links, try them and dump the html, it was 120kb! Pretty cool eh?
+- This code is not made to be secure or even stable.. or even well written. It is a PoC that needs proof-reading.. that being said i did right tests for it in my CI, and I have used this code extensively in small projects.. that have run for weeks!
 
 - This code unfortunately has had nearly all comments removed by a script i wrote for a jenkins pipeline.
 
