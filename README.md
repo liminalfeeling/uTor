@@ -1,10 +1,8 @@
 # uTor
 A >very&lt; small Tor communication library with support for HSV3.
 
-TO WHOM IT MAY CONCERN: NO LICENSE IS PROVIDED BESIDES THE ONES SPECIFIED IN SPECIFIC SOURCE FILES THAT REQUIRE ME TO REPRODUCE SAID LICENSE FOR THE SPECIFIC SOURCE FILE. ALL FILES ARE TO ASSUMED TO BE COPYRIGHTED TO THE FULLEST EXTENT OF SWEDISH LAW (IMPLIED COPYRIGHT IMPLIES) AND SHALL NOT BE COPIED, MODIFIED OR ACCESSED IN ANY WAY WITHOUT THE EXPRESS GIVEN PERMISSION OF MATS BOSSON (PNO: 001128-4***) RESIDENT OF SWEDEN.
-
 This is a private project that took a very. very. long time.. I wanted to see if i could make a Tor hidden service v3 mini library.
-Utilizing only LoL (living off the land) to mash the size down.
+Utilizing mostly LoL (living off the land) to mash the size down.
 
 Keep in mind the following:
 
@@ -20,4 +18,6 @@ Some interesting notes:
 
 - Yes, it would be possible to make this cross-platform. The only issue is all the living off the land (ssl, bcrypt, ntdll) stuff that would need to ported.. in theory however it would be even smaller! Also considering that bsd sockets and etc exists on nearly every linux implementation.
 
-- Yes, the code has functions that are huge, oddly enough, moving them into their own smaller functions results in less optimized code. Also for some parts of the code optimization is disabled! For instance, optimizing often results in ntdll calls failing or BCrypt calls failing. I understand why after looking at the ASM that VS produces. I have not tried compiling with GCC.
+- Yes, the code has functions that are huge, oddly enough, moving them into their own smaller functions results in less optimized code. Also for some parts of the code optimization is disabled! For instance, optimizing often results in ntdll calls failing or BCrypt calls failing. You can understand why by looking at the ASM that VS produces. I have not tried compiling with GCC.
+
+I can explain more about how this works if you want to inquire at: mats.bosson@gmail.com
