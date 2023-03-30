@@ -1,5 +1,5 @@
 # uTor
-A >very&lt; small Tor communication library with support for HSV3.
+A >very&lt; small Tor communication library (for windows) with support for HSV3.
 
 This is a private project that took a very. very. long time.. I wanted to see if i could make a Tor hidden service v3 mini library.
 Utilizing mostly LoL (living off the land) to mash the size down.
