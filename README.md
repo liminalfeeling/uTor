@@ -21,4 +21,3 @@ Some interesting notes:
 - Yes, the code has functions that are huge, oddly enough, moving them into their own smaller functions results in less optimized code. Also for some parts of the code optimization is disabled! For instance, optimizing often results in ntdll calls failing or BCrypt calls failing. You can understand why by looking at the ASM that VS produces. I have not tried compiling with GCC.
 
 I can explain more about how this works if you want to inquire at: mats.bosson@gmail.com
-Or call me at: +46762248626
