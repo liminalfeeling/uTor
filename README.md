@@ -5,8 +5,6 @@ The project was created to test whether malware-level anonymity could be achieve
 Despite its limitations, the library has been integrated into several small-scale internal tools and exhibits stable behavior under continuous operation. That said, it has not been formally tested, nor is it designed for production deployment.
 Technical Highlights:
 
-    ✅ C-based implementation enables minimal overhead and compatibility with embedded targets lacking C++ toolchains
-
     🔒 LoL methodology leverages system-native components like bcrypt.dll, ntdll.dll, and the Windows SSL stack to minimize binary footprint and evade typical detection heuristics
 
     ⚠️ Compiler optimization selectively disabled in key areas to avoid breaking BCrypt or NTDLL interactions (observed through VS-generated assembly quirks)
