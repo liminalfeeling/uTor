@@ -1,23 +1,20 @@
-# uTor
-A >very&lt; small Tor communication library (for windows) with support for HSV3.
+uTor is a compact Tor v3 communication library for Windows, written in pure C and designed as a proof of concept for minimalist, anonymous communication using .onion Hidden Services v3 (HSV3). At just 54 kilobytes, it demonstrates how HSV3 communication can be integrated into ultra-lightweight binaries using only native system calls and libraries.
 
-This is a private project that took a very. very. long time.. I wanted to see if i could make a Tor hidden service v3 mini library.
-Utilizing mostly LoL (living off the land) to mash the size down.
+The project was created to test whether malware-level anonymity could be achieved via Living Off the Land (LoL) techniques, without relying on bundled cryptographic libraries or external networking frameworks. While it broadly adheres to the HSV3 RFC, some functionality is omitted or simplified, making the implementation incomplete by Tor Project standards.
 
-Also, yes the naming conventions are off. This project has gone through some names.
+Despite its limitations, the library has been integrated into several small-scale internal tools and exhibits stable behavior under continuous operation. That said, it has not been formally tested, nor is it designed for production deployment.
+Technical Highlights:
 
-Keep in mind the following:
+    ✅ C-based implementation enables minimal overhead and compatibility with embedded targets lacking C++ toolchains
 
-- This code is not made to be secure or even stable.. or even well written. It is a PoC that needs proof-reading.. that being said i did right tests for it in my CI, and I have used this code extensively in small projects.. that have run for weeks!
+    🔒 LoL methodology leverages system-native components like bcrypt.dll, ntdll.dll, and the Windows SSL stack to minimize binary footprint and evade typical detection heuristics
 
-- This code unfortunately has had nearly all comments removed by a script i wrote for a jenkins pipeline.
+    ⚠️ Compiler optimization selectively disabled in key areas to avoid breaking BCrypt or NTDLL interactions (observed through VS-generated assembly quirks)
 
-- Yes it is written in C, the reason for this is that C++ is very bloated and not (in my opinion) suited for writing small efficient code to the extent that C is. Also writing it in C allows easier compilation for embedded systems that have no C++ compiler. I understand when OOC or functional code is necessary, in this case I have chosen to go for the functional approach.
+    🔁 Partial HSV3 RFC adherence — implements core logic needed to fetch descriptors, perform onion handshakes, and request data, but lacks full feature parity
 
-Some interesting notes:
+    🧪 Zero production hardening — no formal testing, security review, or coverage auditing has been performed
 
-- Yes, it would be possible to make this cross-platform. The only issue is all the living off the land (ssl, bcrypt, ntdll) stuff that would need to ported.. in theory however it would be even smaller! Also considering that bsd sockets and etc exists on nearly every linux implementation.
+    Note: All internal comments were stripped automatically during CI via a Jenkins pipeline. The code remains publicly available and is intended for educational, experimental, and research contexts.
 
-- Yes, the code has functions that are huge, oddly enough, moving them into their own smaller functions results in less optimized code. Also for some parts of the code optimization is disabled! For instance, optimizing often results in ntdll calls failing or BCrypt calls failing. You can understand why by looking at the ASM that VS produces. I have not tried compiling with GCC.
-
-I can explain more about how this works if you want to inquire at: mats.bosson@gmail.com
+📩 Contact: mats.bosson@gmail.com
